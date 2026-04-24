@@ -184,7 +184,7 @@ export class ServersController {
     }
   }
 
-  @Post(':id/api-center/probe')
+@Post(':id/api-center/probe')
   @UseGuards(PermissionsGuard)
   @RequirePermissions('server:update')
   @ApiOperation({ summary: 'Probe endpoint availability', description: '主动探测 endpoint 可用性并记录状态' })
